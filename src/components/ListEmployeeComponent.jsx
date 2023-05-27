@@ -76,7 +76,7 @@ class ListEmployeeComponent extends Component {
               </tr>
             </thead>
             <tbody>
-              {this.state.employees.map((employee) => (
+              {(this.state.employees || []).map((employee) => (
                 <tr key={employee.id}>
                   <td>{employee.firstName}</td>
                   <td>{employee.lastName}</td>
