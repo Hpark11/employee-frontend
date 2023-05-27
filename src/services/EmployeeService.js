@@ -1,9 +1,8 @@
 import axios from "axios";
 
-const EMPLOYEE_API_BASE_URL = "https://api.fastcampus-dragon.net/api/v1/employees";
+const EMPLOYEE_API_BASE_URL = "https://testapi.akive.io/api/v1/employees";
 
 class EmployeeService {
-
   getEmployees() {
     return axios.get(EMPLOYEE_API_BASE_URL);
   }
@@ -25,4 +24,5 @@ class EmployeeService {
   }
 }
 
-export default new EmployeeService();
+let employee = new EmployeeService();
+export default employee;
